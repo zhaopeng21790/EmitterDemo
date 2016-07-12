@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G26a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ttL-nI-Lg4">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--雪-->
+        <scene sceneID="A2r-IT-d84">
+            <objects>
+                <viewController id="3yu-ta-nel" customClass="SnowViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ijx-FX-gm2"/>
+                        <viewControllerLayoutGuide type="bottom" id="aIZ-qZ-HzS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Idt-zI-ZkP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="雪" id="R4w-2o-sHR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rtb-h9-0oL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-139" y="-900"/>
+        </scene>
+        <!--火-->
+        <scene sceneID="4Yx-go-r8f">
+            <objects>
+                <viewController id="9bp-Zv-xUc" customClass="FireViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KaM-Xh-91T"/>
+                        <viewControllerLayoutGuide type="bottom" id="jJa-OH-2fb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4DN-KQ-DOu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="火" id="pCR-tY-xTl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F2d-jm-zPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-217" y="-753"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="G9N-VF-KMK">
+            <objects>
+                <tabBarController id="ttL-nI-Lg4" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="jCO-N9-EsP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9bp-Zv-xUc" kind="relationship" relationship="viewControllers" id="rIF-gQ-3DC"/>
+                        <segue destination="3yu-ta-nel" kind="relationship" relationship="viewControllers" id="YcJ-1p-iVf"/>
+                        <segue destination="DcQ-6N-QSA" kind="relationship" relationship="viewControllers" id="SUJ-T9-T3q"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ENn-Mq-q4Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-796" y="-733"/>
+        </scene>
+        <!--烟花-->
+        <scene sceneID="cxW-yv-TMD">
+            <objects>
+                <viewController id="DcQ-6N-QSA" customClass="FireworksViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ai5-91-Fk7"/>
+                        <viewControllerLayoutGuide type="bottom" id="8MU-VV-rj0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w1r-Zx-8eS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="烟花" id="we5-dL-Idr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HSW-Hm-hE7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-515" y="-823"/>
+        </scene>
+    </scenes>
+</document>
